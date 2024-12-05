@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('airplanebacgkround.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1adde4;
+    
+}
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.6); 
+    transition: background-color 0.3s ease; 
+}
+.navbar ul li a:hover {
+    color: #1adde4; 
+    text-shadow: 0px 4px 15px rgba(26, 221, 228, 0.8); 
+    transform: scale(2.1); 
+    transition: all 0.3s ease; 
+}
+
+
+.context {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.context h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.context h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.booking-form-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form-section h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.booking-form label {
+    font-size: 16px;
+    color: #fff;
+}
+
+.booking-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border: 2px solid #f5a623;
+}
+
+.booking-btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+    background-color: #000000;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .context h1 {
+        font-size: 40px;
+    }
+
+    .context h2 {
+        font-size: 20px;
+    }
+
+    .booking-form-section {
+        padding: 20px;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .booking-form input,
+    .booking-btn {
+        font-size: 14px;
+    }
+}
